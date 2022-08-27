@@ -11,20 +11,7 @@ import retrofit2.http.GET;
 
 public interface CryptoAPI {
 
-
-    //GET, POST, UPDATE; DELETE
-
-    //URL BASE -> www.website.com
-    //GET -> price?key=xxx
-
-    //https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json
-
-    @GET("www.website.com/price?=key")
+    @GET("currencies/ticker?key=d1dd62e634ab1b2449fb22c3ce0832b220c716c0")
     Observable<List<CryptoModel>> getData();
-
-
-    //Call<List<CryptoModel>> getData();
-
-
 
 }
